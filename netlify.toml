@@ -1,0 +1,22 @@
+[build]
+  functions = "netlify/functions"
+
+[[redirects]]
+  from = "/api/quote"
+  to = "/.netlify/functions/quote"
+  status = 200
+
+[[redirects]]
+  from = "/api/history"
+  to = "/.netlify/functions/history"
+  status = 200
+
+[[redirects]]
+  from = "/api/fx"
+  to = "/.netlify/functions/fx"
+  status = 200
+
+[[redirects]]
+  from = "/api/dividends"
+  to = "/.netlify/functions/dividends"
+  status = 200
