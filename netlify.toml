@@ -6,7 +6,7 @@
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Methods = "GET, OPTIONS"
-    Access-Control-Allow-Headers = "Content-Type"
+    Access-Control-Allow-Headers = "Content-Type, Authorization"
 
 [[redirects]]
   from = "/api/quote"
@@ -27,7 +27,13 @@
   from = "/api/dividends"
   to = "/.netlify/functions/dividends"
   status = 200
+
 [[redirects]]
   from = "/api/dividends-tsx"
   to = "/.netlify/functions/dividends-tsx"
+  status = 200
+
+[[redirects]]
+  from = "/api/admin-users"
+  to = "/.netlify/functions/admin-users"
   status = 200
