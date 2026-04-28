@@ -27,3 +27,7 @@
   from = "/api/dividends"
   to = "/.netlify/functions/dividends"
   status = 200
+[[redirects]]
+  from = "/api/dividends-tsx"
+  to = "/.netlify/functions/dividends-tsx"
+  status = 200
